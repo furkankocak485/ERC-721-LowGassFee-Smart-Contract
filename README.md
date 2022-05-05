@@ -145,7 +145,7 @@ contract NFTCOLLECTION is ERC721, Ownable {
 
   // NFT Sözleşmeden Para Çekme ↓ (sahiplik bölümü)
   function withdraw() public onlyOwner {
- // =============================================================================   |PAY VERİLECEKSE BU KSIIM DURACAK|
+ // =============================================================================   |PAY VERİLECEKSE BU KISIM DURACAK|
  
  // Bu koleksiyon için pay vereceğin cüzdan   ↓  ↓  ↓  ↓    // Bu kısımda verilecek payın yüzdelik kısmı  ↓ 
     (bool hs, ) = payable(0x2EB46561F11F1f1fF2DaEC1D9d256149022A3a53).call{value: address(this).balance * 5 / 100}("");
